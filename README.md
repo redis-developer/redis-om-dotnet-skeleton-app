@@ -1,6 +1,6 @@
 # Redis OM .NET Skeleton ASP.NET Core App
 
-Welcome to the Redis OM .NET Skeleton App, this app is designed to provide you a jumping off point to add Redis OM .NET to your ASP.NET Core app, and get you up and running with some basic CRUD operations. If you're curious as to how the app works you can read through the [App walkthrough](https://github.com/redis-developer/redis-om-dotnet-skeleton-app/wiki/App-walkthrough)
+Welcome to the Redis OM .NET Skeleton App, this app is designed to provide you a jumping off point to add Redis OM .NET to your ASP.NET Core app, and get you up and running with some basic CRUD operations. For a detailed explenation of how everything in the app works, read through the [App walkthrough](https://github.com/redis-developer/redis-om-dotnet-skeleton-app/wiki/App-walkthrough)
 
 ## Prerequisites
 
