@@ -5,7 +5,7 @@ Welcome to the Redis OM .NET Skeleton App, this app is designed to provide you a
 ## Prerequisites
 
 * [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-* A means of running Redis, this might be a [Redis Enterprise Account](https://app.redislabs.com/), or even just [docker desktop](https://www.docker.com/products/docker-desktop)
+* A means of running Redis, this might be a [Redis Cloud Account](https://app.redislabs.com/), or even just [docker desktop](https://www.docker.com/products/docker-desktop)
 
 ## Run the App
 
