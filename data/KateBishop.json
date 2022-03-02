@@ -1,0 +1,25 @@
+﻿{
+  "FirstName" : "Kate",
+  "LastName" : "Bishop",
+  "Age" : 27,
+  "Address" :
+  {
+    "StreetNumber" : 22,    
+    "StreetName" : "1/2 N. Venice Blvd",
+    "City" : "Venice" ,
+    "State" : "California",
+    "PostalCode" : "90291",
+    "Country":"United States",
+    "Location": {
+      "Longitude" : -118.471003,
+      "Latitude" : 33.984448
+    }
+  },
+  "Skills": [
+    "archery",
+    "fencing",
+    "boxing",
+    "investigation"
+  ],
+  "PersonalStatement": "World class archer and private investigator."
+}

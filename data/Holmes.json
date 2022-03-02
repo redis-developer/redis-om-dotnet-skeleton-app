@@ -1,0 +1,27 @@
+﻿{
+  "FirstName" : "Sherlock", 
+  "LastName" : "Holmes", 
+  "Age" : 53, 
+  "Address" :
+  {
+    "StreetNumber" : 221,
+    "Unit" : "B" ,
+    "StreetName" : "Baker Street",
+    "City" : "London" ,
+    "State" : "Greater London", 
+    "PostalCode" : "NW1 6XE",
+    "Country":"United Kingdom",
+    "Location": {
+      "Longitude" : -0.1574063,
+      "Latitude" : 51.5177234 
+    }
+  },
+  "Skills": [
+    "deduction",
+    "investigation",
+    "wordle",
+    "handwriting analysis",
+    "boxing"
+  ],
+  "PersonalStatement": "I like running, solving problems, hats, and reading the newspapers."
+}

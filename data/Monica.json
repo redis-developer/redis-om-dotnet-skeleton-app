@@ -1,0 +1,25 @@
+﻿{
+  "FirstName" : "Monica",
+  "LastName" : "Geller",
+  "Age" : 57,
+  "Address" :
+  {
+    "StreetNumber" : 495,
+    "Unit" : "20" ,
+    "StreetName" : "Grove Street",
+    "City" : "New York" ,
+    "State" : "New York",
+    "PostalCode" : "10014",
+    "Country":"United States",
+    "Location": {
+      "Longitude" : -73.935242,
+      "Latitude" : 40.730610
+    }
+  },
+  "Skills": [
+    "cooking",
+    "football",
+    "organization"
+  ],
+  "PersonalStatement": "First-rate New York City Chef. Perhaps a bit over-organized. Mom to Jack and Erica. Don't look in the closet!"
+}

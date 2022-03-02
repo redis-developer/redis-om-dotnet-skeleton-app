@@ -1,4 +1,6 @@
-﻿namespace Redis.OM.Skeleton;
+﻿using Redis.OM.Skeleton.Model;
+
+namespace Redis.OM.Skeleton;
 
 public class StartupService : IHostedService
 {

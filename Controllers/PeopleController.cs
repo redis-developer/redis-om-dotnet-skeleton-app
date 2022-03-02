@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Redis.OM.Searching;
+using Redis.OM.Skeleton.Model;
+
 namespace Redis.OM.Skeleton.Controllers;
 
 [ApiController]
@@ -51,7 +53,7 @@ public class PeopleController : ControllerBase
     [HttpGet("filterGeo")]
     public IList<Person> FilterByGeo([FromQuery] double lon, [FromQuery] double lat, [FromQuery] double radius, [FromQuery] string unit)
     {
-        return _people.GeoFilter(x => x.HomeLoc, lon, lat, radius, Enum.Parse<GeoLocDistanceUnit>(unit)).ToList();
+        return _people.GeoFilter(x => x.Address!.Location, lon, lat, radius, Enum.Parse<GeoLocDistanceUnit>(unit)).ToList();
     }
 
     /// <summary>
@@ -74,6 +76,39 @@ public class PeopleController : ControllerBase
     [HttpGet("fullText")]
     public IList<Person> FilterByPersonalStatement([FromQuery] string text){
         return _people.Where(x => x.PersonalStatement == text).ToList();
+    }
+
+    /// <summary>
+    /// Retrieves a people in a given postal code.
+    /// </summary>
+    /// <param name="postalCode"></param>
+    /// <returns></returns>
+    [HttpGet("postalCode")]
+    public IList<Person> FilterByPostalCode([FromQuery] string postalCode)
+    {
+        return _people.Where(x => x.Address!.PostalCode == postalCode).ToList();
+    }
+
+    /// <summary>
+    /// retrieves people who's street name matches a given street name
+    /// </summary>
+    /// <param name="streetName"></param>
+    /// <returns></returns>
+    [HttpGet("streetName")]
+    public IList<Person> FilterByStreetName([FromQuery] string streetName)
+    {
+        return _people.Where(x => x.Address!.StreetName == streetName).ToList();
+    }
+
+    /// <summary>
+    /// retrieves people who have a given skill
+    /// </summary>
+    /// <param name="skill"></param>
+    /// <returns></returns>
+    [HttpGet("skill")]
+    public IList<Person> FilterBySkill([FromQuery] string skill)
+    {
+        return _people.Where(x => x.Skills.Contains(skill)).ToList();
     }
 
     /// <summary>

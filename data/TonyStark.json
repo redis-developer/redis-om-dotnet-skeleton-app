@@ -1,0 +1,23 @@
+﻿{
+  "FirstName" : "Tony",
+  "LastName" : "Stark",
+  "Age" : 52,
+  "Address" :
+  {
+    "StreetNumber" : 10880,
+    "StreetName" : "Malibu Point",
+    "City" : "Malibu" ,
+    "State" : "California",
+    "PostalCode" : "90265",
+    "Country":"United States",
+    "Location": {
+      "Longitude" : -118.810463,
+      "Latitude" : 34.004870
+    }
+  },
+  "Skills": [
+    "invention",
+    "tinkering"
+  ],
+  "PersonalStatement": "Genius, billionaire, playboy, philanthropist."
+}

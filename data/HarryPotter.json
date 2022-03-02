@@ -1,0 +1,23 @@
+﻿{
+  "FirstName" : "Harry",
+  "LastName" : "Potter",
+  "Age" : 42,
+  "Address" :
+  {
+    "StreetNumber" : 4,
+    "StreetName" : "Privet Drive",
+    "City" : "Little Whinging" ,
+    "State" : "Surrey",
+    "PostalCode" : "RG12 9FG",
+    "Country":"United Kingdom",
+    "Location": {
+      "Longitude" : -0.5692,
+      "Latitude" : 51.3105
+    }
+  },
+  "Skills": [
+    "hexes",
+    "potions"
+  ],
+  "PersonalStatement": "Famous Wizard, best known for vanquishing Voldemort."
+}
