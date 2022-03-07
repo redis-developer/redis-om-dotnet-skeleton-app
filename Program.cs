@@ -1,5 +1,5 @@
 using Redis.OM;
-using Redis.OM.Skeleton;
+using Redis.OM.Skeleton.HostedServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,13 +9,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-//pull connection string out of configuration
-var redisConnectionString = builder.Configuration["REDIS_CONNECTION_STRING"] ?? "redis://localhost:6379";
-builder.Services.AddSingleton(new RedisConnectionProvider(redisConnectionString));
-
-// Adds startup service to create the Index
-builder.Services.AddHostedService<StartupService>();
+builder.Services.AddSingleton(new RedisConnectionProvider(builder.Configuration["REDIS_CONNECTION_STRING"]));
+builder.Services.AddHostedService<IndexCreationService>();
 
 var app = builder.Build();
 
@@ -25,8 +20,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

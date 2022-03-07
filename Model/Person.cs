@@ -1,6 +1,4 @@
 ﻿using Redis.OM.Modeling;
-using System.ComponentModel.DataAnnotations;
-using System.Runtime.InteropServices;
 
 namespace Redis.OM.Skeleton.Model;
 
@@ -26,4 +24,5 @@ public class Person
     //Index an object down 1 level
     [Indexed(CascadeDepth = 1)]
     public Address? Address { get; set; }
+    
 }

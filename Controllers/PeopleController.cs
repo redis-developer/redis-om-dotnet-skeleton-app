@@ -8,7 +8,6 @@ namespace Redis.OM.Skeleton.Controllers;
 [Route("[controller]")]
 public class PeopleController : ControllerBase
 {
-    
     private readonly RedisCollection<Person> _people;
     private readonly RedisConnectionProvider _provider;
     public PeopleController(RedisConnectionProvider provider)

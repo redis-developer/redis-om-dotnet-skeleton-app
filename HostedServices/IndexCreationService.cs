@@ -1,11 +1,11 @@
 ﻿using Redis.OM.Skeleton.Model;
 
-namespace Redis.OM.Skeleton;
+namespace Redis.OM.Skeleton.HostedServices;
 
-public class StartupService : IHostedService
+public class IndexCreationService : IHostedService
 {
     private readonly RedisConnectionProvider _provider;
-    public StartupService(RedisConnectionProvider provider)
+    public IndexCreationService(RedisConnectionProvider provider)
     {
         _provider = provider;
     }

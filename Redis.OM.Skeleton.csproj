@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Redis.OM" Version="0.1.8" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />    
+    <PackageReference Include="Redis.Om" Version="0.1.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
 </Project>
