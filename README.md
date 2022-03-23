@@ -11,7 +11,7 @@ Welcome to the Redis OM .NET Skeleton App, this app is designed to provide you a
 
 ### Spin up Redis
 
-You'll want to spin up Redis before running the app, to do so you can use the [Redis Cloud](https://app.redislabs.com/), or you can just run `docker run -p 6379:6379 redislabs/redismod`
+You'll want to spin up Redis before running the app, to do so you can use the [Redis Cloud](https://app.redislabs.com/), or you can just run `docker run -p 6379:6379 -p 8001:8001 redis/redis-stack`
 
 ### Configure the App
 
